@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System;
+using System.Text;
+using System; 
 
 namespace Library
 {
@@ -16,7 +17,7 @@ namespace Library
         }
         public int ContentAge; 
 
-        public abstract void Visit(Person person); 
+
         public abstract void Visit (NodePerson nodePerson); 
     }
 }
