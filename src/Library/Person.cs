@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System;
+using System.Text;
+using System; 
 
 
 namespace Library
@@ -13,17 +14,10 @@ namespace Library
             this.Age=age; 
         }
 
-        private string name; 
-        private string age; 
-
         public string Name{get; set; }
 
         public int Age{get; set; }
 
-        public void Accept(Visitor visitor)
-        {
-            visitor.Visit(this); 
-        }
     }
 
 }
